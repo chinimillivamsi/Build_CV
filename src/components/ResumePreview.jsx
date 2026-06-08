@@ -1,11 +1,21 @@
 import MinimalistTemplate from './templates/MinimalistTemplate'
 import CreativeTemplate   from './templates/CreativeTemplate'
 import CorporateTemplate  from './templates/CorporateTemplate'
+import ExecutiveTemplate  from './templates/ExecutiveTemplate'
+import TimelineTemplate   from './templates/TimelineTemplate'
+import ElegantTemplate    from './templates/ElegantTemplate'
+import TechTemplate       from './templates/TechTemplate'
+import CompactTemplate    from './templates/CompactTemplate'
 
 const TEMPLATE_MAP = {
   minimalist: MinimalistTemplate,
   creative:   CreativeTemplate,
   corporate:  CorporateTemplate,
+  executive:  ExecutiveTemplate,
+  timeline:   TimelineTemplate,
+  elegant:    ElegantTemplate,
+  tech:       TechTemplate,
+  compact:    CompactTemplate,
 }
 
 export default function ResumePreview({ templateId, resumeData, previewId }) {
@@ -20,7 +30,6 @@ export default function ResumePreview({ templateId, resumeData, previewId }) {
         overflow: 'hidden',
       }}
     >
-      {/* Page shadow container — fills the full column width */}
       <div
         style={{
           background: 'white',
